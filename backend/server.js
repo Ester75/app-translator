@@ -50,15 +50,3 @@ res.json(r.rows);
 
 
 app.listen(3001, () => console.log('✅ Backend running on http://localhost:3001'));
-
-const { Client } = require('pg');
-
-const client = new Client({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'postgres',
-  password: 'yourpassword', // שימי כאן את הסיסמה שהגדרת בפקודת docker run
-  port: 5432,
-});
-
-
